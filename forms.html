@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <form method="POST" action="">
+        <fieldset>
+        <legend>Personal Information</legend>
+        <label>Your name :<br>
+            <input type="text" name="name" required>
+        </label><br>
+        <label>Your Surname :<br>
+            <input type="text" name="surname" required><br>
+        </label>
+        <label>Your age :<br>
+            <input type="text" name="age" required pattern="[\d]{2}" placeholder="23"><br>
+        </label>
+        <div>Your gender:<br>
+        <label><input type="radio" name="gender" value="male">Male<br></label>
+        <label><input type="radio" name="gender" value="female">Female<br></label>
+        <label><input type="radio" name="gender" value="unicorn">Unicorn<br></label>      
+        </div>
+        </fieldset>
+        <fieldset>
+        <legend>Requested Info</legend>
+        <div>Do you like Coffee?<br>
+            <label><input type="radio" name="coffee" value="yes">Yes</label>
+            <label><input type="radio" name="coffee" value="no">No</label>
+        </div>
+        <div>Are you sure?<br>
+            <label><input type="radio" name="sure" value="yes">Yes</label>
+            <label><input type="radio" name="sure" value="no">No</label>
+            <label><input type="radio" name="sure" value="other">Maybe</label>
+        </div>
+        <div>Are you 200% sure?<br>
+            <label><input type="radio" name="200%" value="yes">Yes</label>
+            <label><input type="radio" name="200%" value="no">No</label>
+            <label><input type="radio" name="200%" value="other">Stop it</label>
+        </div>
+           <label>Tell me why you are so sure: <br>
+            <input type="text" name="why" required placeholder="Becouse I am hipster"><br>
+        </label> 
+        </fieldset>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>

@@ -32,17 +32,19 @@
             <label><input type="radio" name="coffee" value="no">No</label>
         </div>
         <div>Are you sure?<br>
-            <label><input type="radio" name="sure" value="yes">Yes</label>
-            <label><input type="radio" name="sure" value="no">No</label>
-            <label><input type="radio" name="sure" value="other">Maybe</label>
+            <select name="Sure?">
+                <option value="maybe">Maybe</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
         </div>
         <div>Are you 200% sure?<br>
-            <label><input type="radio" name="200%" value="yes">Yes</label>
-            <label><input type="radio" name="200%" value="no">No</label>
-            <label><input type="radio" name="200%" value="other">Stop it</label>
+            <label><input type="checkbox" name="200%" value="yes">Yes</label><br>
+            <label><input type="checkbox" name="200%" value="no">No</label><br>
+            <label><input type="checkbox" name="200%" value="other">Stop it</label><br>
         </div>
            <label>Tell me why you are so sure: <br>
-            <input type="text" name="why" required placeholder="Becouse I am hipster"><br>
+            <input type="text" name="why" required placeholder="Because I am hipster"><br>
         </label> 
         </fieldset>
         <input type="submit">
